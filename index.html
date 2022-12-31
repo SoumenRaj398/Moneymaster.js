@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Bank Balance Calculator</h1>
+    </header>
+    <main>
+        <div class="row g-5 m-2">
+            <div class="col-lg-6 col-auto">
+                <img src="images/img.jpg" alt="">
+            </div>
+            <div id="form-part" class="col-lg-6 col-auto text-center">
+                <div>
+                    <!-- Income -->
+                    <div>
+                        <h5>Income</h5>
+                        <div>
+                            <label for=""><b>Income :</b></label>
+                            <input id="income" class="input-btn" placeholder="enter your income" type="text">
+                        </div>
+                    </div>
+
+                    <!-- Expenses -->
+                    <div>
+                        <div>
+                            <h5 class="mt-3">Expenses</h5>
+                            <div class="mt-3">
+                                <label for=""><b>Food :</b></label>
+                                <input id="food" class="input-btn" placeholder="enter your expense" type="text">
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for=""><b>Rent :</b></label>
+                            <input id="rent" class="input-btn" placeholder="enter your expense" type="text">
+                        </div>
+
+                        <div class="mt-3">
+                            <label for=""><b>Clothes :</b></label>
+                            <input id="cloth" class="input-btn" placeholder="enter your expense" type="text">
+                        </div>
+                    </div>
+
+                    <!-- Calculate button -->
+                    <div class="mt-3">
+                        <button id="button-calculate"
+                            class="p-2 ps-5 pe-5 bg-danger border-0 rounded text-white"><b>Calculate</b></button>
+                    </div>
+                    <p id="error-signal">please enter positive number</p>
+
+                    <!-- Total Expenses and Balance part -->
+                    <div>
+                        <h5 class="mt-3">Total Expenses : <span id="total-expense">00</span></h5>
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Balance : <span id="balance-show">00</span></h5>
+                    </div>
+
+                    <!-- Save part -->
+                    <div class="mt-3">
+                        <label for=""><b>Save :</b></label>
+                        <input id="save-input-btn" class="input-btn" placeholder="enter your saving percentage"
+                            type="text">
+                        <label class="p-1" for="">%</label>
+                        <button id="save-btn" class="border-0 p-2 pe-5 ps-5 text-white bg-danger rounded">Save</button>
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Saving Amount : <span id="saving-amount">00</span></h5>
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Remaining Balance : <span id="remaining-balance">00</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
